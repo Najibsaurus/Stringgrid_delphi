@@ -1,0 +1,113 @@
+object Form1: TForm1
+  Left = 192
+  Top = 124
+  Width = 1102
+  Height = 541
+  Caption = 'Penyajian Data Statistik'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 40
+    Top = 32
+    Width = 40
+    Height = 13
+    Caption = 'Fakultas'
+  end
+  object Label2: TLabel
+    Left = 40
+    Top = 80
+    Width = 33
+    Height = 13
+    Caption = 'Jumlah'
+  end
+  object Chart1: TChart
+    Left = 424
+    Top = 48
+    Width = 617
+    Height = 409
+    AllowPanning = pmNone
+    AllowZoom = False
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    BackWall.Pen.Visible = False
+    Title.Text.Strings = (
+      'TChart')
+    AxisVisible = False
+    ClipPoints = False
+    Frame.Visible = False
+    View3DOptions.Elevation = 315
+    View3DOptions.Orthogonal = False
+    View3DOptions.Perspective = 0
+    View3DOptions.Rotation = 360
+    View3DWalls = False
+    TabOrder = 0
+    object Series1: TPieSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = True
+      SeriesColor = clRed
+      OtherSlice.Text = 'Other'
+      PieValues.DateTime = False
+      PieValues.Name = 'Pie'
+      PieValues.Multiplier = 1.000000000000000000
+      PieValues.Order = loNone
+    end
+  end
+  object Button1: TButton
+    Left = 112
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = 'Simpan'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object ComboBox1: TComboBox
+    Left = 112
+    Top = 32
+    Width = 145
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 2
+    Items.Strings = (
+      'Teknik Informatika'
+      'Biologi'
+      'Kimia'
+      'Fisika')
+  end
+  object Edit1: TEdit
+    Left = 112
+    Top = 80
+    Width = 121
+    Height = 21
+    TabOrder = 3
+  end
+  object StringGrid1: TStringGrid
+    Left = 48
+    Top = 168
+    Width = 305
+    Height = 209
+    ColCount = 2
+    FixedCols = 0
+    TabOrder = 4
+    ColWidths = (
+      97
+      64)
+  end
+  object BitBtn1: TBitBtn
+    Left = 48
+    Top = 424
+    Width = 75
+    Height = 25
+    TabOrder = 5
+    OnClick = BitBtn1Click
+    Kind = bkOK
+  end
+end
